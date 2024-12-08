@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Predictor | Ty Jensen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="shapes"></div>
+    </div>
+    <div class="container">
+        <header class="glass-card">
+            <h1>Heart Disease Predictor</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">← Back to Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section glass-card">
+                <h2>Project Overview</h2>
+                <p>This project implements a machine learning web application that predicts the probability of heart disease based on patient data. Built with scikit-learn and Gradio, it provides an intuitive interface for real-time predictions.</p>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Features</h2>
+                <ul>
+                    <li>Interactive web interface for heart disease prediction</li>
+                    <li>Machine learning model trained on UCI Heart Disease dataset</li>
+                    <li>Real-time predictions with probability scores</li>
+                    <li>Simple and intuitive user interface</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Technology Stack</h2>
+                <ul>
+                    <li>Python 3.11</li>
+                    <li>scikit-learn (Machine Learning)</li>
+                    <li>Gradio (Web Interface)</li>
+                    <li>Pandas (Data Processing)</li>
+                    <li>NumPy (Numerical Operations)</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Model Performance</h2>
+                <ul>
+                    <li>Algorithm: Logistic Regression</li>
+                    <li>Accuracy: 87% on test set</li>
+                    <li>Features: 13 clinical parameters</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Dataset</h2>
+                <ul>
+                    <li>Uses the UCI Heart Disease dataset</li>
+                    <li>Features include: Age, Sex, Chest Pain Type</li>
+                    <li>Blood Pressure and Cholesterol Levels</li>
+                    <li>Multiple clinical parameters for prediction</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Technical Implementation</h2>
+                <p>For a comprehensive guide to the project's implementation, including setup instructions, model details, and code walkthrough, please visit the project's GitHub repository. The documentation provides in-depth insights into the machine learning techniques, data preprocessing, and model training used in this heart disease prediction application.</p>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 100px; width: 100%; margin-top: 50px;">
+                    <a href="https://github.com/TyroneJensen/heart_disease_predictor" 
+                       target="_blank" 
+                       class="cert-badge"
+                       style="margin: 0 50px; color: #94a3b8; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(255,255,255,0.3);"
+                       onmouseover="this.style.boxShadow = '0 0 20px rgba(255,255,255,0.6)'"
+                       onmouseout="this.style.boxShadow = '0 0 10px rgba(255,255,255,0.3)'">
+                        <i class="fab fa-github" style="font-size: 1.5em; margin-right: 10px;"></i> View Project on GitHub
+                    </a>
+                    <a href="https://huggingface.co/spaces/TyJensen/heart_disease_predictor" 
+                       target="_blank" 
+                       class="cert-badge"
+                       style="margin: 0 50px; color: #94a3b8; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(255,255,255,0.3);"
+                       onmouseover="this.style.boxShadow = '0 0 20px rgba(255,255,255,0.6)'"
+                       onmouseout="this.style.boxShadow = '0 0 10px rgba(255,255,255,0.3)'">
+                        <i class="fas fa-globe" style="font-size: 1.5em; margin-right: 10px;"></i> View Hosted Application
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

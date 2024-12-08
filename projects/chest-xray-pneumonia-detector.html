@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chest X-Ray Pneumonia Detector | Ty Jensen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="background">
+        <div class="shapes"></div>
+    </div>
+    <div class="container">
+        <header class="glass-card">
+            <h1>Chest X-Ray Pneumonia Detector</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">← Back to Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section glass-card">
+                <h2>Project Overview</h2>
+                <p>This project implements a deep learning model to detect pneumonia from chest X-ray images. It uses transfer learning with a pre-trained ResNet18 model and provides a user-friendly web interface for real-time predictions.</p>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Features</h2>
+                <ul>
+                    <li>Upload and analyze chest X-ray images</li>
+                    <li>Real-time pneumonia detection</li>
+                    <li>Probability scores for normal and pneumonia cases</li>
+                    <li>Interactive web interface</li>
+                    <li>Pre-trained ResNet18 model fine-tuned on medical images</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Technology Stack</h2>
+                <ul>
+                    <li>Python 3.11</li>
+                    <li>PyTorch (Deep Learning)</li>
+                    <li>Torchvision (Image Processing)</li>
+                    <li>Gradio (Web Interface)</li>
+                    <li>ResNet18 (Pre-trained Model)</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Model Architecture</h2>
+                <ul>
+                    <li>Base: ResNet18 (pre-trained on ImageNet)</li>
+                    <li>Modified for binary classification</li>
+                    <li>Input size: 224x224 RGB images</li>
+                    <li>Output: Binary classification (Normal/Pneumonia)</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Dataset</h2>
+                <ul>
+                    <li>5,863 X-Ray images (JPEG)</li>
+                    <li>2 categories: Normal and Pneumonia</li>
+                    <li>Training and testing sets</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Performance</h2>
+                <ul>
+                    <li>Validation Accuracy: ~90%</li>
+                    <li>Real-time inference</li>
+                    <li>Balanced precision and recall</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Technical Implementation</h2>
+                <p>For a comprehensive guide to the project's implementation, including setup instructions, model details, and code walkthrough, please visit the project's GitHub repository. The documentation provides in-depth insights into the technical architecture, data preprocessing, and machine learning techniques used in this pneumonia detection model.</p>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 100px; width: 100%; margin-top: 50px;">
+                    <a href="https://github.com/TyroneJensen/xray_pneumonia_detector" 
+                       target="_blank" 
+                       class="cert-badge"
+                       style="margin: 0 50px; color: #94a3b8; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(255,255,255,0.3);"
+                       onmouseover="this.style.boxShadow = '0 0 20px rgba(255,255,255,0.6)'"
+                       onmouseout="this.style.boxShadow = '0 0 10px rgba(255,255,255,0.3)'">
+                        <i class="fab fa-github" style="font-size: 1.5em; margin-right: 10px;"></i> View Project on GitHub
+                    </a>
+                    <a href="https://huggingface.co/spaces/TyJensen/xray-pneumonia-detector" 
+                       target="_blank" 
+                       class="cert-badge"
+                       style="margin: 0 50px; color: #94a3b8; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(255,255,255,0.3);"
+                       onmouseover="this.style.boxShadow = '0 0 20px rgba(255,255,255,0.6)'"
+                       onmouseout="this.style.boxShadow = '0 0 10px rgba(255,255,255,0.3)'">
+                        <i class="fas fa-globe" style="font-size: 1.5em; margin-right: 10px;"></i> View Hosted Application
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
