@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dashboard | Ty Jensen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="background">
+        <div class="shapes"></div>
+    </div>
+    <div class="container">
+        <header class="glass-card">
+            <h1>Interactive Medical Data Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">← Back to Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section glass-card">
+                <h2>Project Overview</h2>
+                <p>A comprehensive data visualization platform that transforms complex medical data into statistical insights. The dashboard leverages modern web technologies to provide real-time analytics, interactive reporting, and intuitive data exploration.</p>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Features</h2>
+                <ul>
+                    <li>Real-time data visualization</li>
+                    <li>Interactive filtering and drill-down capabilities</li>
+                    <li>Multi-dimensional data analysis</li>
+                    <li>Responsive design for desktop and mobile</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Technology Stack</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>Tableau</li>
+                    <li>Google Earth</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Data Processing</h2>
+                <ul>
+                    <li>ETL pipelines with CSV and Python</li>
+                    <li>Data cleaning and transformation using Pandas</li>
+                    <li>Data augmentation using the Google Earth API</li>
+                    <li>EDA visualizations using Seaborn and Matplotlib</li>
+                    <li>Automated data refresh mechanisms</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Performance</h2>
+                <ul>
+                    <li>Low-latency data rendering</li>
+                    <li>Supports large-scale datasets</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Dataset</h2>
+                <ul>
+                    <li>Uses custom dataset from Western Cape Blood Service</li>
+                    <li>Features include: Age, Sex, Race, Ferritin, Hemoglobin </li>
+                    <li>Geospatial data obtained from custom compiled database of co-ordinates using Google Earth</li>
+                    <li>Multiple clinical parameters for analysis and prediction</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Technical Implementation</h2>
+                <p>For a comprehensive guide to the project's implementation, including setup instructions, architecture details, and code walkthrough, please visit the project's GitHub repository. The documentation provides in-depth insights into the technical design, data processing techniques, and innovative solutions used in this business intelligence platform.</p>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 100px; width: 100%; margin-top: 50px;">
+                    <a href="https://github.com/TyroneJensen/ferritin_interactive_dashboard" 
+                       target="_blank" 
+                       class="cert-badge"
+                       style="margin: 0 50px; color: #94a3b8; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(255,255,255,0.3);"
+                       onmouseover="this.style.boxShadow = '0 0 20px rgba(255,255,255,0.6)'"
+                       onmouseout="this.style.boxShadow = '0 0 10px rgba(255,255,255,0.3)'">
+                        <i class="fab fa-github" style="font-size: 1.5em; margin-right: 10px;"></i> View Project on GitHub
+                    </a>
+                    <a href="https://public.tableau.com/views/WCBSFerritinAnalysisDashboard/Dashboard3?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+                       target="_blank" 
+                       class="cert-badge"
+                       style="margin: 0 50px; color: #94a3b8; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(255,255,255,0.3);"
+                       onmouseover="this.style.boxShadow = '0 0 20px rgba(255,255,255,0.6)'"
+                       onmouseout="this.style.boxShadow = '0 0 10px rgba(255,255,255,0.3)'">
+                        <i class="fas fa-globe" style="font-size: 1.5em; margin-right: 10px;"></i> View Hosted Dashboard
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

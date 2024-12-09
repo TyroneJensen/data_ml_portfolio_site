@@ -19,13 +19,14 @@
         <header class="glass-card">
             <div class="profile-header">
                 <div class="profile-image">
-                    <img src="https://via.placeholder.com/250" alt="Ty Jensen">
+                    <img src="Tyrone.jpg" alt="Ty Jensen">
                 </div>
                 <h1>Tyrone Jensen</h1>
                 <h2 class="tagline">Data Scientist & Machine Learning Developer</h2>
                 <div class="certifications">
                     <span class="cert-badge">AWS Developer Certified</span>
                     <span class="cert-badge">AWS ML Associate</span>
+                    <span class="cert-badge">DataCamp Data Science Associate</span>
                 </div>
             </div>
             
@@ -73,93 +74,75 @@
             <section id="projects" class="section glass-card">
                 <h2>Projects</h2>
                 <div class="projects-grid">
-                    <a href="./projects/predictive-maintenance.html" class="project-card" onclick="window.location.href='./projects/predictive-maintenance.html'">
-                        <div class="project-content">
-                            <h3>Predictive Maintenance ML System</h3>
-                            <p>Developed an end-to-end ML pipeline for industrial equipment maintenance prediction, achieving 94% accuracy in failure prediction.</p>
-                            <div class="tech-stack">
-                                <span>PyTorch</span>
-                                <span>AWS SageMaker</span>
-                                <span>Time Series Analysis</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./projects/analytics-dashboard.html" class="project-card" onclick="window.location.href='./projects/analytics-dashboard.html'">
-                        <div class="project-content">
-                            <h3>Real-time Analytics Dashboard</h3>
-                            <p>Built a real-time data analytics platform processing 1M+ events daily, with ML-powered anomaly detection.</p>
-                            <div class="tech-stack">
-                                <span>TensorFlow</span>
-                                <span>Kafka</span>
-                                <span>React</span>
-                            </div>
-                        </div>
-                    </a>
                     <a href="./projects/chest-xray-pneumonia-detector.html" class="project-card" onclick="window.location.href='./projects/chest-xray-pneumonia-detector.html'">
                         <div class="project-content">
                             <h3>Chest X-Ray Pneumonia Detector</h3>
-                            <p>Deep learning application for real-time pneumonia detection from chest X-ray images using PyTorch.</p>
+                            <p>A deep learning model to detect pneumonia from chest X-ray images using transfer learning with ResNet18.</p>
                             <div class="tech-stack">
                                 <span>PyTorch</span>
-                                <span>Gradio</span>
                                 <span>ResNet18</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./projects/market-analysis.html" class="project-card" onclick="window.location.href='./projects/market-analysis.html'">
-                        <div class="project-content">
-                            <h3>NLP-Powered Market Analysis</h3>
-                            <p>Created a sentiment analysis system processing financial news and social media data to predict market trends.</p>
-                            <div class="tech-stack">
-                                <span>BERT</span>
-                                <span>Hugging Face</span>
-                                <span>AWS Comprehend</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./projects/quality-control.html" class="project-card" onclick="window.location.href='./projects/quality-control.html'">
-                        <div class="project-content">
-                            <h3>Computer Vision Quality Control</h3>
-                            <p>Implemented an automated quality control system using computer vision, reducing defect rate by 75%.</p>
-                            <div class="tech-stack">
-                                <span>OpenCV</span>
-                                <span>TensorFlow</span>
-                                <span>AWS Rekognition</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./projects/mlops-platform.html" class="project-card" onclick="window.location.href='./projects/mlops-platform.html'">
-                        <div class="project-content">
-                            <h3>MLOps Automation Platform</h3>
-                            <p>Designed and implemented an automated ML model deployment pipeline with A/B testing capabilities.</p>
-                            <div class="tech-stack">
-                                <span>Docker</span>
-                                <span>Kubernetes</span>
-                                <span>AWS ECS</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./projects/recommendation-engine.html" class="project-card" onclick="window.location.href='./projects/recommendation-engine.html'">
-                        <div class="project-content">
-                            <h3>Recommendation Engine</h3>
-                            <p>Built a scalable recommendation system handling 10M+ users with real-time personalization.</p>
-                            <div class="tech-stack">
-                                <span>Scikit-learn</span>
-                                <span>AWS Personalize</span>
-                                <span>Redis</span>
+                                <span>Gradio</span>
                             </div>
                         </div>
                     </a>
                     <a href="./projects/heart-disease-predictor.html" class="project-card" onclick="window.location.href='./projects/heart-disease-predictor.html'">
                         <div class="project-content">
                             <h3>Heart Disease Predictor</h3>
-                            <p>Developed a machine learning web app for predicting heart disease probability with 87% accuracy.</p>
+                            <p>A machine learning web application that predicts the probability of heart disease based on patient data.</p>
                             <div class="tech-stack">
-                                <span>scikit-learn</span>
+                                <span>Scikit-learn</span>
                                 <span>Gradio</span>
-                                <span>Pandas</span>
+                                <span>Python</span>
                             </div>
                         </div>
+                    </a>
+                    <a href="./projects/skin-cancer-classifier.html" class="project-card" onclick="window.location.href='./projects/skin-cancer-classifier.html'">
+                        <div class="project-content">
+                            <h3>Skin Cancer Classifier</h3>
+                            <p>Classify skin cancer images using a CNN trained on the ISIC dataset, differentiating between benign and malignant lesions.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>Gradio</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./projects/aws-data-etl-ml-pipeline.html" class="project-card" onclick="window.location.href='./projects/aws-data-etl-ml-pipeline.html'">
+                        <div class="project-content">
+                            <h3>AWS Data ETL and ML Pipeline</h3>
+                            <p>Comprehensive data engineering and machine learning pipeline using AWS services like Lambda, S3, Glue, Athena, and SageMaker.</p>
+                            <div class="tech-stack">
+                                <span>AWS</span>
+                                <span>SageMaker</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./projects/interactive-dashboard.html" class="project-card" onclick="window.location.href='./projects/interactive-dashboard.html'">
+                        <div class="project-content">
+                            <h3>Interactive Medical Data Dashboard</h3>
+                            <p>Advanced data visualization platform with real-time analytics and interactive reporting capabilities.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>React.js</span>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="other-profiles" class="section glass-card">
+                <h2>View My Profiles</h2>
+                <div class="contact-links">
+                    <a href="https://github.com/TyroneJensen" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.datacamp.com/portfolio/TyJensen" target="_blank" class="contact-link">
+                        <i class="fas fa-chart-line"></i> DataCamp
+                    </a>
+                    <a href="https://www.kaggle.com/tyjensen" target="_blank" class="contact-link">
+                        <i class="fab fa-kaggle"></i> Kaggle
                     </a>
                 </div>
             </section>
@@ -167,21 +150,19 @@
             <section id="contact" class="section glass-card">
                 <h2>Contact Me</h2>
                 <div class="contact-links">
-                    <a href="https://github.com/TyroneJensen" target="_blank" class="contact-link">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
                     <a href="https://www.linkedin.com/in/tyronejensen" target="_blank" class="contact-link">
                         <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
-                    <a href="mailto:tyrone.jensen@example.com" class="contact-link">
+                    <a href="mailto:tyronejensen8@gmail.com" class="contact-link">
                         <i class="fas fa-envelope"></i> Email
                     </a>
                 </div>
             </section>
+
         </main>
 
         <footer class="glass-card">
-            <p>&copy; 2024 Ty Jensen. All rights reserved.</p>
+            <p>&copy; 2025 Tyrone Jensen. All rights reserved.</p>
         </footer>
     </div>
 

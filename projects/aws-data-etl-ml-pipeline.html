@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Data ETL and ML Pipeline | Ty Jensen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="background">
+        <div class="shapes"></div>
+    </div>
+    <div class="container">
+        <header class="glass-card">
+            <h1>AWS Data ETL and ML Pipeline</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">← Back to Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section glass-card">
+                <h2>Project Overview</h2>
+                <p>This project demonstrates the use of AWS services to create a data pipeline for processing and analyzing data. It integrates AWS Lambda, S3, Glue, Athena, and SageMaker to provide a comprehensive solution for data engineering and machine learning.</p>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Features</h2>
+                <ul>
+                    <li>End-to-end data processing pipeline</li>
+                    <li>Serverless data extraction with AWS Lambda</li>
+                    <li>Machine learning model training on SageMaker</li>
+                    <li>Data cataloging and querying with AWS Glue and Athena</li>
+                    <li>Model deployment as a scalable endpoint</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Technology Stack</h2>
+                <ul>
+                    <li>AWS Services (Lambda, S3, Glue, Athena, SageMaker)</li>
+                    <li>Python 3.x</li>
+                    <li>Boto3</li>
+                    <li>SageMaker Python SDK</li>
+                    <li>XGBoost</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Project Structure</h2>
+                <ul>
+                    <li>`train.py`: Train XGBoost model using SageMaker</li>
+                    <li>`deploy.py`: Deploy trained model as an endpoint</li>
+                    <li>`predict.py`: Make predictions using deployed model</li>
+                    <li>`lambda_function.py`: AWS Lambda function for data processing</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Data Processing Workflow</h2>
+                <ol>
+                    <li>Fetch data using AWS Lambda</li>
+                    <li>Process and store data in S3</li>
+                    <li>Catalog data with AWS Glue</li>
+                    <li>Query and analyze data with Athena</li>
+                    <li>Train machine learning model on SageMaker</li>
+                    <li>Deploy model as a scalable endpoint</li>
+                </ol>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Performance</h2>
+                <ul>
+                    <li>Serverless architecture for scalability</li>
+                    <li>Automated data processing</li>
+                    <li>Real-time prediction capabilities</li>
+                    <li>Integrated machine learning workflow</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Technical Implementation</h2>
+                <p>For a comprehensive guide to the project's implementation, including setup instructions, AWS service configuration, and detailed workflow, please visit the project's GitHub repository. The documentation provides in-depth insights into building a robust, scalable data pipeline using AWS services.</p>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 100px; width: 100%; margin-top: 50px;">
+                    <a href="https://github.com/TyroneJensen/aws_data_pipeline" 
+                       target="_blank" 
+                       class="cert-badge"
+                       style="margin: 0 50px; color: #94a3b8; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(255,255,255,0.3);"
+                       onmouseover="this.style.boxShadow = '0 0 20px rgba(255,255,255,0.6)'"
+                       onmouseout="this.style.boxShadow = '0 0 10px rgba(255,255,255,0.3)'">
+                        <i class="fab fa-github" style="font-size: 1.5em; margin-right: 10px;"></i> View Project on GitHub
+                    </a>
+                    <a href="https://aws.amazon.com/sagemaker/studio/" 
+                       target="_blank" 
+                       class="cert-badge"
+                       style="margin: 0 50px; color: #94a3b8; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(255,255,255,0.3);"
+                       onmouseover="this.style.boxShadow = '0 0 20px rgba(255,255,255,0.6)'"
+                       onmouseout="this.style.boxShadow = '0 0 10px rgba(255,255,255,0.3)'">
+                        <i class="fas fa-globe" style="font-size: 1.5em; margin-right: 10px;"></i> View AWS SageMaker
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>

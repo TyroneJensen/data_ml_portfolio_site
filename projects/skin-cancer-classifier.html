@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Cancer Classifier | Ty Jensen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="background">
+        <div class="shapes"></div>
+    </div>
+    <div class="container">
+        <header class="glass-card">
+            <h1>Skin Cancer Classifier</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">← Back to Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section glass-card">
+                <h2>Project Overview</h2>
+                <p>This project aims to classify skin cancer images using a Convolutional Neural Network (CNN). The model is trained to differentiate between benign and malignant skin lesions using the ISIC Skin Cancer Dataset.</p>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Features</h2>
+                <ul>
+                    <li>Classify skin cancer images</li>
+                    <li>Real-time classification</li>
+                    <li>Interactive web interface</li>
+                    <li>Trained on ISIC dataset</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Technology Stack</h2>
+                <ul>
+                    <li>Python 3.11</li>
+                    <li>TensorFlow (Deep Learning)</li>
+                    <li>Keras (Model Building)</li>
+                    <li>Gradio (Web Interface)</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Model Architecture</h2>
+                <ul>
+                    <li>Type: Convolutional Neural Network (CNN)</li>
+                    <li>Layers: Convolutional layers with ReLU activation, Max pooling layers, Flatten layer, Dense layers with dropout, Output layer with sigmoid activation for binary classification</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Dataset</h2>
+                <ul>
+                    <li>Source: ISIC Skin Cancer Dataset</li>
+                    <li>Format: JPG images with accompanying metadata</li>
+                    <li>Metadata: Contains image IDs and labels (benign or malignant)</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Performance</h2>
+                <ul>
+                    <li>Validation Accuracy: ~85%</li>
+                    <li>Real-time inference</li>
+                    <li>Balanced precision and recall</li>
+                </ul>
+            </section>
+
+            <section class="section glass-card">
+                <h2>Technical Implementation</h2>
+                <p>For a comprehensive guide to the project's implementation, including setup instructions, model details, and code walkthrough, please visit the project's GitHub repository. The documentation provides in-depth insights into the technical architecture, data preprocessing, and machine learning techniques used in this skin cancer classification model.</p>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 100px; width: 100%; margin-top: 50px;">
+                    <a href="https://github.com/TyroneJensen/skin_cancer_classification" 
+                       target="_blank" 
+                       class="cert-badge"
+                       style="margin: 0 50px; color: #94a3b8; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(255,255,255,0.3);"
+                       onmouseover="this.style.boxShadow = '0 0 20px rgba(255,255,255,0.6)'"
+                       onmouseout="this.style.boxShadow = '0 0 10px rgba(255,255,255,0.3)'">
+                        <i class="fab fa-github" style="font-size: 1.5em; margin-right: 10px;"></i> View Project on GitHub
+                    </a>
+                    <a href="https://huggingface.co/spaces/TyJensen/skin-cancer-classifier" 
+                       target="_blank" 
+                       class="cert-badge"
+                       style="margin: 0 50px; color: #94a3b8; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(255,255,255,0.3);"
+                       onmouseover="this.style.boxShadow = '0 0 20px rgba(255,255,255,0.6)'"
+                       onmouseout="this.style.boxShadow = '0 0 10px rgba(255,255,255,0.3)'">
+                        <i class="fas fa-globe" style="font-size: 1.5em; margin-right: 10px;"></i> View Hosted Application
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
