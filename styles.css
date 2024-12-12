@@ -183,9 +183,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cert-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.profile-header .certifications .cert-badge,
+.profile-header .certifications .cert-badge:hover {
+    pointer-events: none !important;
+    cursor: default !important;
+    transition: none !important;
     transform: none !important;
     box-shadow: none !important;
     background-color: transparent !important;
+    text-decoration: none !important;
 }
 
 .cert-badge::before {
@@ -510,27 +520,50 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: center;
     gap: 3rem;
+    padding: 1rem;
 }
 
 .contact-link {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--primary-color);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s ease;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: var(--glass-background);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.contact-link i {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
 }
 
 .contact-link:hover {
+    transform: scale(1.05);
+    border-color: var(--primary-color);
+    box-shadow: 
+        0 0 20px rgba(100, 255, 218, 0.3),
+        0 0 40px rgba(100, 255, 218, 0.2),
+        0 0 60px rgba(100, 255, 218, 0.1);
+}
+
+.contact-link:hover i,
+.contact-link:hover {
     color: var(--primary-color);
     transform: scale(1.05);
-    box-shadow: 
-        0 0 20px rgba(100, 255, 218, 0.2),
-        0 0 40px rgba(100, 255, 218, 0.1);
-    background-color: rgba(100, 255, 218, 0.05);
+}
+
+.contact-link:hover i {
+    transform: scale(1.2);
 }
 
 footer {
@@ -806,5 +839,86 @@ code[class*="language-"] {
 @media (max-width: 480px) {
     .skills-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .project-section .external-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .project-section .external-links a {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Specific selector for project page buttons */
+    section div[style*="display: flex; justify-content: center; align-items: center; gap: 100px; width: 100%; margin-top: 50px"] {
+        flex-direction: column !important;
+        gap: 15px !important;
+        align-items: center !important;
+        margin-top: 20px !important;
+    }
+
+    section div[style*="display: flex; justify-content: center; align-items: center; gap: 100px; width: 100%; margin-top: 50px"] a {
+        width: 80% !important;
+        margin: 10px 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Universal selector for project page button containers */
+    .section div[style*="display: flex"],
+    .section div[style*="flex"],
+    div[style*="display: flex; justify-content: center; align-items: center; gap:"] {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+    }
+
+    .section div[style*="display: flex"] a,
+    .section div[style*="flex"] a,
+    div[style*="display: flex; justify-content: center; align-items: center; gap:"] a {
+        width: 80% !important;
+        margin: 10px 0 !important;
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-header nav {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav,
+    header > nav,
+    .glass-card nav {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        width: 0 !important;
+        overflow: hidden !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        padding: 1rem !important;
+    }
+
+    .project-card {
+        width: 100% !important;
+        margin: 0 !important;
     }
 }
